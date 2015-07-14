@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ac34ca1e275e3744bb954af55a8def49
+timeCreated: 1428987752
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Target: {fileID: 115696, guid: b7900e9c60b175f42a691fc00eea4507, type: 2}
+  - DiceToRoll: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

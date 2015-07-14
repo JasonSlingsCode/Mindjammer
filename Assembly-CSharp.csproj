@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{AB92E005-0D44-32BA-3369-02F074B6AFF1}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\LineRendererController.cs" />
+     <Compile Include="Assets\Scripts\Calculator.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\AgriWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\AlienCivilization.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\Balkanized.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\BaseCivilization.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\ClosedWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CommonalityCivilization.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CommonalityHub.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CoreWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CoreWorldsHub.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CorporacyWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\CultureWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\Depot.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\Failing.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\HighPopulationWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\Holdout.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\IndustrialWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\InstrumentalityHub.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\InterstellarCivilization.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\InterstellarHub.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\PrisonPlanet.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\QuarantinedWorld.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\Regressed.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\SeedColony.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\SynthColony.cs" />
+     <Compile Include="Assets\Scripts\Civilizations\UnitedWorld.cs" />
+     <Compile Include="Assets\Scripts\ControllerUI.cs" />
+     <Compile Include="Assets\Scripts\ControllingCameraAspect.cs" />
+     <Compile Include="Assets\Scripts\DiceButton.cs" />
+     <Compile Include="Assets\Scripts\FaceCamera.cs" />
+     <Compile Include="Assets\Scripts\MouseOrbitImproved.cs" />
+     <Compile Include="Assets\Scripts\MouseOrbitZoom.cs" />
+     <Compile Include="Assets\Scripts\MouseZoom.cs" />
+     <Compile Include="Assets\Scripts\Planets\AccretionDisk.cs" />
+     <Compile Include="Assets\Scripts\Planets\AsteroidBelt.cs" />
+     <Compile Include="Assets\Scripts\Planets\BasePlanetarySystem.cs" />
+     <Compile Include="Assets\Scripts\Planets\CarbonPlanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\ChthonianPlanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\DesertWorld.cs" />
+     <Compile Include="Assets\Scripts\Planets\DwarfPlanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\GardenWorldInferior.cs" />
+     <Compile Include="Assets\Scripts\Planets\GardenWorldMarginal.cs" />
+     <Compile Include="Assets\Scripts\Planets\GardenWorldStandard.cs" />
+     <Compile Include="Assets\Scripts\Planets\GardenWorldSuperior.cs" />
+     <Compile Include="Assets\Scripts\Planets\GasGiant.cs" />
+     <Compile Include="Assets\Scripts\Planets\HeliumPlanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\IceGiant.cs" />
+     <Compile Include="Assets\Scripts\Planets\Iceball.cs" />
+     <Compile Include="Assets\Scripts\Planets\Inferno.cs" />
+     <Compile Include="Assets\Scripts\Planets\OceanWorld.cs" />
+     <Compile Include="Assets\Scripts\Planets\PostGardenWorld.cs" />
+     <Compile Include="Assets\Scripts\Planets\ProtoGasGiant.cs" />
+     <Compile Include="Assets\Scripts\Planets\Protoplanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\RoguePlanet.cs" />
+     <Compile Include="Assets\Scripts\Planets\SuperEarth.cs" />
+     <Compile Include="Assets\Scripts\Planets\TerrestrialPlanet.cs" />
+     <Compile Include="Assets\Scripts\RollDice.cs" />
+     <Compile Include="Assets\Scripts\ShowOnMouseOver.cs" />
+     <Compile Include="Assets\Scripts\SliderController.cs" />
+     <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Scripts\StarData.cs" />
+     <Compile Include="Assets\Scripts\StarDataGroup.cs" />
+     <Compile Include="Assets\Scripts\Stars\AsymptoticGiant.cs" />
+     <Compile Include="Assets\Scripts\Stars\BaseSpectralClass.cs" />
+     <Compile Include="Assets\Scripts\Stars\BaseStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\BaseStellarType.cs" />
+     <Compile Include="Assets\Scripts\Stars\BlackStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassA.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassB.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassC.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassF.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassG.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassK.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassL.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassM.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassO.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassS.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassT.cs" />
+     <Compile Include="Assets\Scripts\Stars\ClassY.cs" />
+     <Compile Include="Assets\Scripts\Stars\CollapsingStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\CoolSubdwarf.cs" />
+     <Compile Include="Assets\Scripts\Stars\DarkMatterStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\ElectroweakStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\EruptiveVariable.cs" />
+     <Compile Include="Assets\Scripts\Stars\Giant.cs" />
+     <Compile Include="Assets\Scripts\Stars\HIIRegion.cs" />
+     <Compile Include="Assets\Scripts\Stars\HotSubdwarf.cs" />
+     <Compile Include="Assets\Scripts\Stars\InterstellarCloud.cs" />
+     <Compile Include="Assets\Scripts\Stars\MainSequenceStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\MolecularCloud.cs" />
+     <Compile Include="Assets\Scripts\Stars\NeutronStar.cs" />
+     <Compile Include="Assets\Scripts\Stars\PlanetaryNebula.cs" />
+     <Compile Include="Assets\Scripts\Stars\PreMainSequence.cs" />
+     <Compile Include="Assets\Scripts\Stars\Protostar.cs" />
+     <Compile Include="Assets\Scripts\Stars\PulsatingVariable.cs" />
+     <Compile Include="Assets\Scripts\Stars\StellarBlackHole.cs" />
+     <Compile Include="Assets\Scripts\Stars\StellarCore.cs" />
+     <Compile Include="Assets\Scripts\Stars\Subgiant.cs" />
+     <Compile Include="Assets\Scripts\Stars\SubstellarObject.cs" />
+     <Compile Include="Assets\Scripts\Stars\Supergiant.cs" />
+     <Compile Include="Assets\Scripts\Stars\WhiteDwarf.cs" />
+     <Compile Include="Assets\Scripts\SystemGenerator.cs" />
+     <Compile Include="Assets\Scripts\TouchCam.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtDebugMesh.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtDemoGui.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtDepthTextureMode.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtGravityReceiver.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtGravitySource.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtHideWireframe.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtKeyboardMove.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtMouseLook.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtMove.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtProceduralSystem.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtRotate.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtSimpleOrbit.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtSpacetimeBomb.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtSpacetimeBombs.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtTooltip.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtTwirl.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtVelocity.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtBeltAsteroid.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtBeltAsteroidVariant.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtClassPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtComponentPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtCoronaOuter.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtEditorHelper.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtHelper.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtNebulaSource.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtObjectPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtOutputMode.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtPatchBuilder.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtProceduralMesh.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtRangeAttribute.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtRenderQueue.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtSeedAttribute.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtStarfieldStar.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAccretion.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAdvancedBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAtmosphere.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBeltGroup.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBeltModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCloudsphere.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCloudsphereModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCorona.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCustomBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCustomStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtDisplacedTerrain.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtEllipticalStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtJovian.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtJovianModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtNebulaStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtObserver.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtPatch.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtProminence.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtProminencePlane.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRing.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRingSegment.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRingShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSimpleBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSingularity.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSingularityModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpacetime.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpacetimeWell.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSphereShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpiralStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfieldGroup.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfieldModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtTerrain.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtWrappedStarfield.cs" />
+     <None Include="Assets\Space Graphics Toolkit\Examples\Basic Pack\Shaders\SgtTerrainDebug.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtAtmosphereInner.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtShadow.cginc" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtLight.cginc" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtSingularity.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtAtmosphereOuter.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtSpacetime.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtCoronaInner.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtAccretion.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtCloudsphere.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtStarfield.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtProminence.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtBelt.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtRing.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtCoronaOuter.shader" />
+     <None Include="Assets\Space Graphics Toolkit\Shaders\Resources\SgtJovian.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
