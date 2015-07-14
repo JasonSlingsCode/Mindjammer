@@ -1,60 +1,29 @@
-﻿using UnityEngine;
+﻿// Script by Jason Miller
+// psyaxismundi@gmail.com
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ControllerUI : MonoBehaviour 
 {
-    public Transform startPoint;
-    public Transform endPoint;
-    public enum UseCase { Auto, Manual}
-    public UseCase useCase;
-    [SerializeField]
-    private float _moveSpeed = 1;
-    private bool _return;
-    [SerializeField]
-    private bool _switch = true;
-    private Rigidbody _platformRigidBody = null;
-    public Transform _platform;
-    
+    void Awake()
+    {
+
+    }
+
     void Start()
     {
-        _platformRigidBody = _platform.transform.GetComponent<Rigidbody>();
-        _platformRigidBody.mass = 200;
+
     }
-    
-    public void SwitchState()
+
+    void Update()
     {
-        _switch = (_switch == true) ? false : true;
+
     }
-    
-    void SetState(bool state)
+
+    public void MoveUI()
     {
-        _switch = state;
-        
-    }
-    
-    void FixedUpdate()
-    {
-        if (useCase == UseCase.Auto)
-        {
-            if (_platform.position == endPoint.position) _return = true;
-            if (_platform.position == startPoint.position) _return = false;
-            
-            if (_return) _platform.position = Vector3.MoveTowards(_platform.position, startPoint.position, _moveSpeed * Time.fixedDeltaTime);
-            if (!_return) _platform.position = Vector3.MoveTowards(_platform.position, endPoint.position, _moveSpeed * Time.fixedDeltaTime);
-        }
-        if (useCase == UseCase.Manual)
-        {          
-            if (_switch) _platform.position = Vector3.MoveTowards(_platform.position, startPoint.position, _moveSpeed * Time.fixedDeltaTime);
-            if (!_switch) _platform.position = Vector3.MoveTowards(_platform.position, endPoint.position, _moveSpeed * Time.fixedDeltaTime);       
-        }
-        
-    }
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(startPoint.position, transform.localScale);
-        
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(endPoint.position, transform.localScale);
+        print("MoveUI()");
     }
 }

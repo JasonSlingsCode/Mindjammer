@@ -51,6 +51,6 @@ public class ShowOnMouseOver : MonoBehaviour
 
     void OnMouseUp()
     {
-        print("CLICK");
+
     }
 }
