@@ -12,6 +12,10 @@ public class ShowOnMouseOver : MonoBehaviour
     private Text StellarTypeDescriptionText;
     private Text SpectralClassDescriptionText;
 
+    public Text HighConcept;
+    public Text StellarTypeDescription;
+    public Text SpectralClassDescription;
+
     private GameObject UIInfoPanels;
 
     void Awake()
@@ -22,26 +26,27 @@ public class ShowOnMouseOver : MonoBehaviour
     void Start()
     {
         this.gameObject.GetComponent<Canvas>().enabled = false;
-        StarInfoText = GameObject.Find("MainUI").GetComponentsInChildren<Text>();
-        HighConceptDescriptionText = StarInfoText [2];
-        StellarTypeDescriptionText = StarInfoText [3];
-        SpectralClassDescriptionText = StarInfoText [4];
-        UIInfoPanels = GameObject.Find("UIInfoPanels");
+        StarInfoText = GameObject.FindGameObjectWithTag("SideMenu").GetComponentsInChildren<Text>();
+        HighConcept = StarInfoText [0];
+        HighConceptDescriptionText = HighConcept;
+        StellarTypeDescription = StarInfoText [1];
+        SpectralClassDescription = StarInfoText [2];
+        // UIInfoPanels = GameObject.Find("UIInfoPanels");
     }
 
     void OnMouseEnter()
     {
         // enable UI panels
         this.gameObject.GetComponent<Canvas>().enabled = true;
-        HighConceptDescriptionText.text = this.gameObject.transform.parent.gameObject.name;
+        HighConcept.text = this.gameObject.transform.parent.gameObject.name;
 
         // resets the text box to the top of the scroll window
-        Vector3 PosYReset = new Vector3(0,-70.0f,0);
-        StellarTypeDescriptionText.transform.localPosition = PosYReset;
+        // Vector3 PosYReset = new Vector3(0,-70.0f,0);
+        // StellarTypeDescriptionText.transform.localPosition = PosYReset;
 
         // sets the text for stellar type information
-        StellarTypeDescriptionText.text = this.gameObject.transform.parent.gameObject.GetComponent<BaseStellarType>().StellarTypeDescriptionText;
-        SpectralClassDescriptionText.text = this.gameObject.transform.parent.gameObject.GetComponent<BaseSpectralClass>().SpectralClassDescriptionText;
+        StellarTypeDescription.text = this.gameObject.transform.parent.gameObject.GetComponent<BaseStellarType>().StellarTypeDescriptionText;
+        SpectralClassDescription.text = this.gameObject.transform.parent.gameObject.GetComponent<BaseSpectralClass>().SpectralClassDescriptionText;
     }
 
     void OnMouseExit()
